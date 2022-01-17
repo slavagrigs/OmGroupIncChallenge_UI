@@ -35,4 +35,10 @@ public class OmGroupInc_steps {
         String expectedURL = "https://omgroupinc.us/aboutus.html";
         Assert.assertEquals(actualURL,expectedURL);
     }
+    @Then("user should be able to perform CssValue verification for fontSize_color_fontWeight")
+    public void user_should_be_able_to_perform_css_value_verification_for_font_size_color_font_weight() {
+        omGroupPage.CssValueVerificationForAboutOmGroupHeader_fontSize();
+        omGroupPage.CssValueVerificationForAboutOmGroupHeader_color();
+        omGroupPage.CssValueVerificationForAboutOmGroupHeader_fontWeight();
+    }
 }

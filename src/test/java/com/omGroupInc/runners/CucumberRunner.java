@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
         tags = "@demo1",                                      // for specific tag (from feature files)
 
         publish= true,                                        //for online cucumber report
-        dryRun = false                                       //true - verification process without implementation actual code/ false=>code execution
+        dryRun = false                                      //true - verification process without implementation actual code/ false=>code execution
 )
 
 
