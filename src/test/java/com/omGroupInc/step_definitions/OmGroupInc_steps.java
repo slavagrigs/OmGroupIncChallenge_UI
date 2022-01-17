@@ -42,4 +42,3 @@ public class OmGroupInc_steps {
         omGroupPage.CssValueVerificationForAboutOmGroupHeader_fontWeight();
     }
 }
-//testTest
