@@ -37,7 +37,7 @@ public class OmGroupPage extends BasePage {
 
     public void CssValueVerificationForAboutOmGroupHeader_fontSize(){
         String actual_fontSize = aboutOmGroupHeader.getCssValue("font-size");
-        System.out.println("Actual font-size is " + actual_fontSize);
+        System.out.println("font-size is " + actual_fontSize);
         String expected_fontSize = "28px";
         Assert.assertEquals(actual_fontSize,expected_fontSize);
     }
@@ -47,13 +47,13 @@ public class OmGroupPage extends BasePage {
     String expectedColor = "#ff9966";
     String ActualColor = Color.fromString(colorOfAboutOmGroupHeader).asHex();
 
-    System.out.println("Actual color - " + ActualColor);
+    System.out.println("color is " + ActualColor);
     Assert.assertEquals(ActualColor, expectedColor);
 }
 
     public void CssValueVerificationForAboutOmGroupHeader_fontWeight() {
         String actualFontWeight = aboutOmGroupHeader.getCssValue("font-weight");
-        System.out.println("Actual font-weight - " + actualFontWeight);
+        System.out.println("font-weight is - " + actualFontWeight);
         System.out.println("==================================================================");
         String expectedFontWeight = "600";
 
