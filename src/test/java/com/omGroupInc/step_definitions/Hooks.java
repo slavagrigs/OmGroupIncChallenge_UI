@@ -21,7 +21,6 @@ public class Hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-
     @After  // must be from cucumber io not from Junit (Similar with AfterMethod in TestNG)
     public void tearDown(Scenario scenario){
         //this is a hook runs automatically after each test
@@ -32,7 +31,6 @@ public class Hooks {
             byte[] data = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(data,"image/png", scenario.getName());
         }
-
 
         Driver.closeDriver();
 

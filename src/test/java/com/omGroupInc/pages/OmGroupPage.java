@@ -19,7 +19,6 @@ public class OmGroupPage extends BasePage {
     @FindBy(xpath = "(//*[text()='About OM GROUP'])[1]")
     WebElement aboutOMGROUP;
 
-
     public void clickAboutAs(){
         aboutUsBtn.click();
     }
@@ -59,7 +58,4 @@ public class OmGroupPage extends BasePage {
 
         Assert.assertEquals(actualFontWeight, expectedFontWeight);
     }
-
-
-
 }

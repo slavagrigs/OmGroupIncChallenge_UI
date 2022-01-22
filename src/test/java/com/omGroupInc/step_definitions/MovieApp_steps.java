@@ -11,7 +11,6 @@ public class MovieApp_steps {
 
     MovieApp movieApp = new MovieApp();
 
-
     @Given("user is on a main page of the app")
     public void user_is_on_a_main_page_of_the_app() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -26,7 +25,6 @@ public class MovieApp_steps {
 
         Assert.assertEquals(actualTitle,expectedTitle);
     }
-
 
     @When("user clicks on a search box and user provides specific movie's name_title")
     public void user_clicks_on_a_search_box_and_user_provides_specific_movie_s_name_title() {
@@ -43,9 +41,4 @@ public class MovieApp_steps {
         String actualURL = Driver.getDriver().getCurrentUrl();
         System.out.println(actualURL);
     }
-
-
-
-
-
 }
