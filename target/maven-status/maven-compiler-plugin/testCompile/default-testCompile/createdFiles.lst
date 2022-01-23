@@ -1,10 +1,10 @@
-com\omGroupInc\utils\ConfigurationReader.class
 com\omGroupInc\runners\CucumberRunner.class
 com\omGroupInc\step_definitions\MovieApp_steps.class
-com\omGroupInc\pages\OmGroupPage.class
-com\omGroupInc\utils\BrowserUtils.class
 com\omGroupInc\utils\Driver.class
-com\omGroupInc\step_definitions\OmGroupInc_steps.class
-com\omGroupInc\pages\MovieApp.class
 com\omGroupInc\pages\BasePage.class
 com\omGroupInc\step_definitions\Hooks.class
+com\omGroupInc\utils\ConfigurationReader.class
+com\omGroupInc\pages\OmGroupPage.class
+com\omGroupInc\utils\BrowserUtils.class
+com\omGroupInc\step_definitions\OmGroupInc_steps.class
+com\omGroupInc\pages\MovieApp.class

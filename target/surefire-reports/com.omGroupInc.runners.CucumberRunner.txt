@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.omGroupInc.runners.CucumberRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.061 s <<< FAILURE! - in com.omGroupInc.runners.CucumberRunner
-OmGroupInc_app.app's automation  Time elapsed: 17.208 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<600[]> but was:<600[2222222222222222222222222]>
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.5 s - in com.omGroupInc.runners.CucumberRunner
