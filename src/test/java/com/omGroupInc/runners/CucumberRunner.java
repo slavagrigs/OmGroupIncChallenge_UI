@@ -24,8 +24,7 @@ import org.junit.runner.RunWith;
         dryRun = false                                      //true - verification process without implementation actual code/ false=>code execution
 )
 
-
-
 public class CucumberRunner {
 
 }
+//changes to .gitignore
