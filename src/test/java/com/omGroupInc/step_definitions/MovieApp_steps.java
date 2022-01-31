@@ -6,7 +6,6 @@ import com.omGroupInc.utils.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-
 public class MovieApp_steps {
 
     MovieApp movieApp = new MovieApp();
@@ -14,15 +13,10 @@ public class MovieApp_steps {
     @Given("user is on a main page of the app")
     public void user_is_on_a_main_page_of_the_app() throws InterruptedException {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-        wait(2000);
-        movieApp.clickAdvanceBtn();
-        wait(2000);
-        movieApp.proceedLink.click();
 
         String expectedTitle = "React App";
         String actualTitle = Driver.getDriver().getTitle();
         System.out.println(actualTitle);
-
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 
@@ -38,7 +32,8 @@ public class MovieApp_steps {
 
     @Then("user should be able to see movie's title that he_she was searching for")
     public void user_should_be_able_to_see_movie_s_title_that_he_she_was_searching_for() {
-        String actualURL = Driver.getDriver().getCurrentUrl();
-        System.out.println(actualURL);
+        String expectedAceVenturaMovieHeader = "'Ace Ventura: When Nature Calls'";
+        String actualAceVenturaMovieHeader = movieApp.getTextOfAceVenturaHeaderAfterSearch();
+        Assert.assertEquals(expectedAceVenturaMovieHeader,actualAceVenturaMovieHeader);
     }
 }

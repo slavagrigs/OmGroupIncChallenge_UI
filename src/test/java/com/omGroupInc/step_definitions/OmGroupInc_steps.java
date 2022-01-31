@@ -16,9 +16,9 @@ public class OmGroupInc_steps {
     public void user_is_on_a_main_page_of_the_app_om_group_inc() {
         Driver.getDriver().get(ConfigurationReader.getProperty("urlOmGroupInc"));
         String actualTitle = Driver.getDriver().getTitle();
-        System.out.println("Title is "+actualTitle);
         String expectedTitle = "OM GROUP INC";
         Assert.assertEquals(actualTitle,expectedTitle);
+        System.out.println("Actual Title: "+actualTitle + " is equal to Expected Title: " + expectedTitle);
     }
     @When("user clicks on About Us button")
     public void user_clicks_on_about_us_button()  {

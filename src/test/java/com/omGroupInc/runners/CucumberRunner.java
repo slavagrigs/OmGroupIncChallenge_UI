@@ -18,13 +18,12 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",          //path from content Root for features file
         glue = "com/omGroupInc/step_definitions",                 //path from source  Root for stepDefinitions
-        tags = "@demo1",                                      // for specific tag (from feature files)
+        tags = "@UI",                                      // for specific tag (from feature files)
 
-        publish= true,                                        //for online cucumber report
-        dryRun = false                                      //true - verification process without implementation actual code/ false=>code execution
+        publish = true,                                        //for online cucumber report
+        dryRun = false                                     //true - verification process without implementation actual code/ false=>code execution
 )
 
 public class CucumberRunner {
 
 }
-//changes to .gitignore

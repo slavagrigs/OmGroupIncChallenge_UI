@@ -13,8 +13,11 @@ import javax.swing.*;
 
 public class OmGroupPage extends BasePage {
 
-    @FindBy(xpath = "(//*[text()='About Us'])[1]")
+    @FindBy (xpath = "(//*[text()='About Us'])[1]")
      WebElement aboutUsBtn;
+
+    @FindBy(xpath = "//img[@class='mlogo']")
+    public WebElement logo;
 
     @FindBy(xpath = "(//*[text()='About OM GROUP'])[1]")
     WebElement aboutOMGROUP;
